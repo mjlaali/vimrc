@@ -98,7 +98,7 @@ let g:solarized_termcolors=16
 se t_Co=16
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
+colorscheme industry
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -343,3 +343,5 @@ endfunction
 
 set laststatus=2
 set statusline=[%{WindowNumber()}]\ %f\ [line:%4l]
+
+source ~/.vim/shortcut

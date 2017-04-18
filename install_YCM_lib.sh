@@ -40,24 +40,3 @@ if [ "$YCM_LIB" = true ] ; then
   fi
 fi
 
-mkdir backup
-mv ~/.vim ~/.vimrc ~/.gvimrc backup
-# Linke required files for vim setup
-mkdir vim
-mkdir vim/bundle
-ln -s $PWD/vim ~/.vim
-ln -s $PWD/Vundle.vim $PWD/vim/bundle/Vundle.vim
-ln -s $PWD/vimrc ~/.vimrc
-ln -s $PWD/gvimrc ~/.gvimrc
-
-# Install vim plugings
-vim +PluginInstall +qall
-
-# Install YouCompleteMe
-cd vim/bundle/YouCompleteMe
-if [ "$YCM_CLANG" = true ] ; then
-  ./install.py --clang-completer
-else
-  ./install.sh
-fi
-

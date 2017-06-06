@@ -1,0 +1,6 @@
+let mapleader=","
+
+nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>
+nmap <leader>v :e $MYVIMRC<CR>
+nmap <leader>s :e ~/.vim/shortcut<CR>
+

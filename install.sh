@@ -49,6 +49,7 @@ ln -s $PWD/vim ~/.vim
 ln -s $PWD/Vundle.vim $PWD/vim/bundle/Vundle.vim
 ln -s $PWD/vimrc ~/.vimrc
 ln -s $PWD/gvimrc ~/.gvimrc
+ln -s $PWD/vimshortcut ~/.vimshortcut
 
 # Install vim plugings
 vim +PluginInstall +qall

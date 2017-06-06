@@ -344,4 +344,4 @@ endfunction
 set laststatus=2
 set statusline=[%{WindowNumber()}]\ %f\ [line:%4l]
 
-source ~/.vim/shortcut
+source ~/.vimshortcut

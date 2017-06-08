@@ -1,6 +1,13 @@
 let mapleader=","
 
-nnoremap <buffer> <leader>r :exec '!clear;python' shellescape(@%, 1)<cr>
-nmap <leader>v :e $MYVIMRC<CR>
-nmap <leader>s :e ~/.vim/shortcut<CR>
+nnoremap <F9> :exec '!clear;python' shellescape(@%, 1)<CR>
+nnoremap <F10> :call VimuxRunCommand("clear;tox")<CR>
+nnoremap <leader>vv :e $MYVIMRC<CR>
+nnoremap <Leader>vi :VimuxInspectRunner<CR>
+nnoremap <leader>vs :e ~/.vimshortcut<CR>
+nnoremap <silent> <leader>t :!clear;tox <CR>
+nnoremap <leader>sv :source $MYVIMRC <CR>
 
+nnoremap <F7> :NERDTreeToggle<CR>
+nmap <C-e> <C-^>
+nnoremap <F5> :buffers<CR>:buffer<Space>

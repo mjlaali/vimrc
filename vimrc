@@ -40,6 +40,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
 " Run command in background
+" Interaction with tmux inside vim
 Plugin 'benmills/vimux'
 
 " GIT
@@ -64,7 +65,7 @@ filetype plugin indent on    " required
 " SOLARIZED
 set background=dark
 " config for proper displaying of colors in Screen
-colorscheme industry
+colorscheme darkblue
 
 " =============================================================================
 " GENERAL SETTINGS
